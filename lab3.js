@@ -37,9 +37,7 @@ const analyticsData = [
    * @returns {string} "Good" or "Low"
    */
   const getEngagementLevel = (user) => {
-    // TODO: use if/else or ternary operator
-    // Hint: Check if user.avgSessionDuration >= 200
-    return ""; // Replace with your implementation
+    return user.avgSessionDuration >= 200 ? "Good" : "Low";
   };
   
   /**
