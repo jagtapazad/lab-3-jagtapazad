@@ -47,9 +47,17 @@ const analyticsData = [
    * @returns {string} Name of user with longest session
    */
   const findLongestSessionUser = (data) => {
-    // TODO: use for loop
-    // Hint: Keep track of max duration and corresponding user name
-    return ""; // Replace with your implementation
+    let longestName = "";
+    let longestDuration = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].avgSessionDuration > longestDuration) {
+        longestDuration = data[i].avgSessionDuration;
+        longestName = data[i].name;
+      }
+    }
+
+    return longestName;
   };
 
 
