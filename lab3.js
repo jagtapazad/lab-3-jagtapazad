@@ -91,9 +91,7 @@ const analyticsData = [
    * @returns {number} Sum of all totalSessions
    */
   const getTotalSessions = (data) => {
-    // TODO: use reduce
-    // Hint: Accumulate user.totalSessions
-    return 0; // Replace with your implementation
+    return data.reduce((total, user) => total + user.totalSessions, 0);
   };
   
   // ========================================
