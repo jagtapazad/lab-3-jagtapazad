@@ -69,10 +69,7 @@ const analyticsData = [
    * @returns {Array} Array of formatted strings like "Alice: 3 sessions"
    */
   const formatSessions = (data) => {
-    // TODO: use map
-    // Hint: Use template literal `${user.name}: ${user.totalSessions} sessions`
-    return []; // Replace with your implementation
-    
+    return data.map(user => `${user.name}: ${user.totalSessions} sessions`);
   };
   
   /**
